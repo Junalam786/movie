@@ -10,7 +10,7 @@ body {
   width: 100%;
   height: 55px;
   background-color: black;
-  position: relative;
+  position: sticky;
   top: 0;
 }
 
@@ -53,6 +53,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
 }
 
 .profile-text-container {
@@ -273,8 +274,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  right: 30vw;
+  /* position: absolute; */
+  /* right: 30vw; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -331,7 +332,7 @@ body {
   background-color: var(--light-dark-color);
   padding: 0.5rem;
   border-bottom: 1px solid var(--dark-color);
-  width: calc(350px - 8px);
+  width: calc(300px - 8px);
   color: #fff;
   cursor: pointer;
   -webkit-transition: background-color 200ms ease;
@@ -385,7 +386,7 @@ body {
 
 /* movie result */
 .result-container{
-  padding: 3rem 0;
+  /* padding: 3rem 0; */
   background-color: rgb(1, 124, 146);
 }
 .movie-poster img{
@@ -410,12 +411,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
+  /* -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+          justify-content: center; */
   padding: 1rem;
 }
 .movie-info .year{
@@ -514,6 +515,9 @@ body {
   .result-grid{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+  }
+  .result-container{
+    margin-left: 55px;
   }
   .movie-info{
       text-align: left;

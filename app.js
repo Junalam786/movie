@@ -42,7 +42,8 @@ const resultGrid = document.getElementById('result-grid');
 
 // load movies from API
 async function loadMovies(searchTerm){
-    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`;
+    //const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`;
+    const  URL =`https://omdbapi.com/?s=${searchTerm}&apikey=fc67802a`;
     const res = await fetch(`${URL}`);
     const data = await res.json();
     // console.log(data.Search);
